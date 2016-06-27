@@ -31,7 +31,7 @@ router.post('/adduser',function(req,res){
   var collection = db.get('usercollection');
 
   //submit to the DB
-  colection.insert({
+  collection.insert({
     "username": userName,
     "email": useremail
   }, function(err,doc){
