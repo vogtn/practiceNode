@@ -12,7 +12,13 @@ router.get('/helloworld',function(req,res){
   res.render('helloworld',{title:'Hello,World!'});
 });
 
+/*Get New User page */
+router.get('/newuser', function(req,res){
+  res.render('newuser',{title:'Add New User'});
+});
+
 module.exports = router;
+
 
 /* Get the Userlist page */
 router.get('/userlist', function(req,res){
